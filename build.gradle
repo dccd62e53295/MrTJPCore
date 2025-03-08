@@ -9,7 +9,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2+'
     }
 }
 
@@ -57,17 +57,17 @@ minecraft {
     makeObfSourceJar = false
 }
 
-sourceSets {
-    main {
-        def root = project.projectDir
-        scala {
-            srcDir new File(root, "src")
-        }
-        resources {
-            srcDir new File(root, "resources")
-        }
-    }
-}
+//sourceSets {
+//    main {
+//        def root = project.projectDir
+//        scala {
+//            srcDir new File(root, "src")
+//        }
+//        resources {
+//            srcDir new File(root, "resources")
+//        }
+//    }
+//}
 
 processResources {
     //redo task if any of these properties change
